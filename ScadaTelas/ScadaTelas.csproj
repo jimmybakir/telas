@@ -50,10 +50,28 @@
     <Compile Include="FormCrearProcesos.Designer.cs">
       <DependentUpon>FormCrearProcesos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCrearProcesos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearProcesos2.Designer.cs">
+      <DependentUpon>FormCrearProcesos2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrearSubProcesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearSubProcesos.Designer.cs">
+      <DependentUpon>FormCrearSubProcesos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCrearProcesos.resx">
       <DependentUpon>FormCrearProcesos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearProcesos2.resx">
+      <DependentUpon>FormCrearProcesos2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearSubProcesos.resx">
+      <DependentUpon>FormCrearSubProcesos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
