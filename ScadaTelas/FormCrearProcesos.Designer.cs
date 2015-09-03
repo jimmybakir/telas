@@ -46,11 +46,30 @@
             this.CPCalentar = new System.Windows.Forms.CheckBox();
             this.CPLlenar = new System.Windows.Forms.CheckBox();
             this.CubaPrincipal = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.CSIntroduccionVolumen = new System.Windows.Forms.CheckBox();
+            this.CSIntroduccionTiempo = new System.Windows.Forms.CheckBox();
+            this.Cuba1 = new System.Windows.Forms.CheckBox();
+            this.Cuba2 = new System.Windows.Forms.CheckBox();
+            this.CSIntroduccion = new System.Windows.Forms.CheckBox();
+            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.CSLavadoCantidad = new System.Windows.Forms.CheckBox();
+            this.CSLavadoDescarga = new System.Windows.Forms.CheckBox();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.CSLlenadoRed = new System.Windows.Forms.CheckBox();
+            this.CSLlenadoMaquina = new System.Windows.Forms.CheckBox();
+            this.CSLavado = new System.Windows.Forms.CheckBox();
+            this.CSLlenado = new System.Windows.Forms.CheckBox();
             this.gCubaPrincipal.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // gCubaPrincipal
@@ -241,11 +260,168 @@
             this.CubaPrincipal.UseVisualStyleBackColor = true;
             this.CubaPrincipal.CheckedChanged += new System.EventHandler(this.CubaPrincipal_CheckedChanged);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.flowLayoutPanel5);
+            this.groupBox1.Controls.Add(this.CSIntroduccion);
+            this.groupBox1.Controls.Add(this.flowLayoutPanel7);
+            this.groupBox1.Controls.Add(this.flowLayoutPanel8);
+            this.groupBox1.Controls.Add(this.CSLavado);
+            this.groupBox1.Controls.Add(this.CSLlenado);
+            this.groupBox1.Location = new System.Drawing.Point(14, 216);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(721, 135);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cubas Secundarias";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Controls.Add(this.CSIntroduccionVolumen);
+            this.flowLayoutPanel5.Controls.Add(this.CSIntroduccionTiempo);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(397, 62);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(121, 52);
+            this.flowLayoutPanel5.TabIndex = 7;
+            // 
+            // CSIntroduccionVolumen
+            // 
+            this.CSIntroduccionVolumen.AutoSize = true;
+            this.CSIntroduccionVolumen.Location = new System.Drawing.Point(3, 3);
+            this.CSIntroduccionVolumen.Name = "CSIntroduccionVolumen";
+            this.CSIntroduccionVolumen.Size = new System.Drawing.Size(74, 19);
+            this.CSIntroduccionVolumen.TabIndex = 0;
+            this.CSIntroduccionVolumen.Text = "Volumen";
+            this.CSIntroduccionVolumen.UseVisualStyleBackColor = true;
+            // 
+            // CSIntroduccionTiempo
+            // 
+            this.CSIntroduccionTiempo.AutoSize = true;
+            this.CSIntroduccionTiempo.Location = new System.Drawing.Point(3, 28);
+            this.CSIntroduccionTiempo.Name = "CSIntroduccionTiempo";
+            this.CSIntroduccionTiempo.Size = new System.Drawing.Size(84, 19);
+            this.CSIntroduccionTiempo.TabIndex = 1;
+            this.CSIntroduccionTiempo.Text = "Tiempo [s]";
+            this.CSIntroduccionTiempo.UseVisualStyleBackColor = true;
+            // 
+            // Cuba1
+            // 
+            this.Cuba1.AutoSize = true;
+            this.Cuba1.Location = new System.Drawing.Point(14, 191);
+            this.Cuba1.Name = "Cuba1";
+            this.Cuba1.Size = new System.Drawing.Size(66, 19);
+            this.Cuba1.TabIndex = 0;
+            this.Cuba1.Text = "Cuba 1";
+            this.Cuba1.UseVisualStyleBackColor = true;
+            // 
+            // Cuba2
+            // 
+            this.Cuba2.AutoSize = true;
+            this.Cuba2.Location = new System.Drawing.Point(86, 191);
+            this.Cuba2.Name = "Cuba2";
+            this.Cuba2.Size = new System.Drawing.Size(66, 19);
+            this.Cuba2.TabIndex = 1;
+            this.Cuba2.Text = "Cuba 2";
+            this.Cuba2.UseVisualStyleBackColor = true;
+            this.Cuba2.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // CSIntroduccion
+            // 
+            this.CSIntroduccion.AutoSize = true;
+            this.CSIntroduccion.Location = new System.Drawing.Point(378, 31);
+            this.CSIntroduccion.Name = "CSIntroduccion";
+            this.CSIntroduccion.Size = new System.Drawing.Size(93, 19);
+            this.CSIntroduccion.TabIndex = 3;
+            this.CSIntroduccion.Text = "Introduccion";
+            this.CSIntroduccion.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel7
+            // 
+            this.flowLayoutPanel7.Controls.Add(this.CSLavadoCantidad);
+            this.flowLayoutPanel7.Controls.Add(this.CSLavadoDescarga);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(233, 59);
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(121, 52);
+            this.flowLayoutPanel7.TabIndex = 6;
+            // 
+            // CSLavadoCantidad
+            // 
+            this.CSLavadoCantidad.AutoSize = true;
+            this.CSLavadoCantidad.Location = new System.Drawing.Point(3, 3);
+            this.CSLavadoCantidad.Name = "CSLavadoCantidad";
+            this.CSLavadoCantidad.Size = new System.Drawing.Size(76, 19);
+            this.CSLavadoCantidad.TabIndex = 0;
+            this.CSLavadoCantidad.Text = "Cantidad";
+            this.CSLavadoCantidad.UseVisualStyleBackColor = true;
+            // 
+            // CSLavadoDescarga
+            // 
+            this.CSLavadoDescarga.AutoSize = true;
+            this.CSLavadoDescarga.Location = new System.Drawing.Point(3, 28);
+            this.CSLavadoDescarga.Name = "CSLavadoDescarga";
+            this.CSLavadoDescarga.Size = new System.Drawing.Size(80, 19);
+            this.CSLavadoDescarga.TabIndex = 1;
+            this.CSLavadoDescarga.Text = "Descarga";
+            this.CSLavadoDescarga.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.Controls.Add(this.CSLlenadoRed);
+            this.flowLayoutPanel8.Controls.Add(this.CSLlenadoMaquina);
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(60, 56);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(121, 52);
+            this.flowLayoutPanel8.TabIndex = 5;
+            // 
+            // CSLlenadoRed
+            // 
+            this.CSLlenadoRed.AutoSize = true;
+            this.CSLlenadoRed.Location = new System.Drawing.Point(3, 3);
+            this.CSLlenadoRed.Name = "CSLlenadoRed";
+            this.CSLlenadoRed.Size = new System.Drawing.Size(49, 19);
+            this.CSLlenadoRed.TabIndex = 0;
+            this.CSLlenadoRed.Text = "Red";
+            this.CSLlenadoRed.UseVisualStyleBackColor = true;
+            // 
+            // CSLlenadoMaquina
+            // 
+            this.CSLlenadoMaquina.AutoSize = true;
+            this.CSLlenadoMaquina.Location = new System.Drawing.Point(3, 28);
+            this.CSLlenadoMaquina.Name = "CSLlenadoMaquina";
+            this.CSLlenadoMaquina.Size = new System.Drawing.Size(70, 19);
+            this.CSLlenadoMaquina.TabIndex = 1;
+            this.CSLlenadoMaquina.Text = "Maquna";
+            this.CSLlenadoMaquina.UseVisualStyleBackColor = true;
+            // 
+            // CSLavado
+            // 
+            this.CSLavado.AutoSize = true;
+            this.CSLavado.Location = new System.Drawing.Point(213, 31);
+            this.CSLavado.Name = "CSLavado";
+            this.CSLavado.Size = new System.Drawing.Size(73, 19);
+            this.CSLavado.TabIndex = 2;
+            this.CSLavado.Text = "Lavados";
+            this.CSLavado.UseVisualStyleBackColor = true;
+            // 
+            // CSLlenado
+            // 
+            this.CSLlenado.AutoSize = true;
+            this.CSLlenado.Location = new System.Drawing.Point(43, 31);
+            this.CSLlenado.Name = "CSLlenado";
+            this.CSLlenado.Size = new System.Drawing.Size(71, 19);
+            this.CSLlenado.TabIndex = 1;
+            this.CSLlenado.Text = "Llenado";
+            this.CSLlenado.UseVisualStyleBackColor = true;
+            // 
             // FormCrearProcesos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(806, 441);
+            this.Controls.Add(this.Cuba2);
+            this.Controls.Add(this.Cuba1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.CubaPrincipal);
             this.Controls.Add(this.gCubaPrincipal);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -262,6 +438,14 @@
             this.flowLayoutPanel3.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
+            this.flowLayoutPanel7.ResumeLayout(false);
+            this.flowLayoutPanel7.PerformLayout();
+            this.flowLayoutPanel8.ResumeLayout(false);
+            this.flowLayoutPanel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,6 +471,21 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.CheckBox CPCalentarTemp;
         private System.Windows.Forms.CheckBox CPCaletarTiempo;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.CheckBox CSIntroduccionVolumen;
+        private System.Windows.Forms.CheckBox CSIntroduccionTiempo;
+        private System.Windows.Forms.CheckBox Cuba1;
+        private System.Windows.Forms.CheckBox Cuba2;
+        private System.Windows.Forms.CheckBox CSIntroduccion;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.CheckBox CSLavadoCantidad;
+        private System.Windows.Forms.CheckBox CSLavadoDescarga;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
+        private System.Windows.Forms.CheckBox CSLlenadoRed;
+        private System.Windows.Forms.CheckBox CSLlenadoMaquina;
+        private System.Windows.Forms.CheckBox CSLavado;
+        private System.Windows.Forms.CheckBox CSLlenado;
     }
 }
 
