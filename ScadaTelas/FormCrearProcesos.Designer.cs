@@ -50,8 +50,6 @@
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.CSIntroduccionVolumen = new System.Windows.Forms.CheckBox();
             this.CSIntroduccionTiempo = new System.Windows.Forms.CheckBox();
-            this.Cuba1 = new System.Windows.Forms.CheckBox();
-            this.Cuba2 = new System.Windows.Forms.CheckBox();
             this.CSIntroduccion = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.CSLavadoCantidad = new System.Windows.Forms.CheckBox();
@@ -61,6 +59,8 @@
             this.CSLlenadoMaquina = new System.Windows.Forms.CheckBox();
             this.CSLavado = new System.Windows.Forms.CheckBox();
             this.CSLlenado = new System.Windows.Forms.CheckBox();
+            this.Cuba1 = new System.Windows.Forms.CheckBox();
+            this.Cuba2 = new System.Windows.Forms.CheckBox();
             this.gCubaPrincipal.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -274,7 +274,6 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cubas Secundarias";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // flowLayoutPanel5
             // 
@@ -305,27 +304,6 @@
             this.CSIntroduccionTiempo.Text = "Tiempo [s]";
             this.CSIntroduccionTiempo.UseVisualStyleBackColor = true;
             // 
-            // Cuba1
-            // 
-            this.Cuba1.AutoSize = true;
-            this.Cuba1.Location = new System.Drawing.Point(14, 191);
-            this.Cuba1.Name = "Cuba1";
-            this.Cuba1.Size = new System.Drawing.Size(66, 19);
-            this.Cuba1.TabIndex = 0;
-            this.Cuba1.Text = "Cuba 1";
-            this.Cuba1.UseVisualStyleBackColor = true;
-            // 
-            // Cuba2
-            // 
-            this.Cuba2.AutoSize = true;
-            this.Cuba2.Location = new System.Drawing.Point(86, 191);
-            this.Cuba2.Name = "Cuba2";
-            this.Cuba2.Size = new System.Drawing.Size(66, 19);
-            this.Cuba2.TabIndex = 1;
-            this.Cuba2.Text = "Cuba 2";
-            this.Cuba2.UseVisualStyleBackColor = true;
-            this.Cuba2.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
-            // 
             // CSIntroduccion
             // 
             this.CSIntroduccion.AutoSize = true;
@@ -335,6 +313,7 @@
             this.CSIntroduccion.TabIndex = 3;
             this.CSIntroduccion.Text = "Introduccion";
             this.CSIntroduccion.UseVisualStyleBackColor = true;
+            this.CSIntroduccion.CheckedChanged += new System.EventHandler(this.CSIntroduccion_CheckedChanged);
             // 
             // flowLayoutPanel7
             // 
@@ -403,6 +382,7 @@
             this.CSLavado.TabIndex = 2;
             this.CSLavado.Text = "Lavados";
             this.CSLavado.UseVisualStyleBackColor = true;
+            this.CSLavado.CheckedChanged += new System.EventHandler(this.CSLavado_CheckedChanged);
             // 
             // CSLlenado
             // 
@@ -413,6 +393,29 @@
             this.CSLlenado.TabIndex = 1;
             this.CSLlenado.Text = "Llenado";
             this.CSLlenado.UseVisualStyleBackColor = true;
+            this.CSLlenado.CheckedChanged += new System.EventHandler(this.CSLlenado_CheckedChanged);
+            // 
+            // Cuba1
+            // 
+            this.Cuba1.AutoSize = true;
+            this.Cuba1.Location = new System.Drawing.Point(14, 191);
+            this.Cuba1.Name = "Cuba1";
+            this.Cuba1.Size = new System.Drawing.Size(66, 19);
+            this.Cuba1.TabIndex = 0;
+            this.Cuba1.Text = "Cuba 1";
+            this.Cuba1.UseVisualStyleBackColor = true;
+            this.Cuba1.CheckedChanged += new System.EventHandler(this.Cuba1_CheckedChanged);
+            // 
+            // Cuba2
+            // 
+            this.Cuba2.AutoSize = true;
+            this.Cuba2.Location = new System.Drawing.Point(86, 191);
+            this.Cuba2.Name = "Cuba2";
+            this.Cuba2.Size = new System.Drawing.Size(66, 19);
+            this.Cuba2.TabIndex = 1;
+            this.Cuba2.Text = "Cuba 2";
+            this.Cuba2.UseVisualStyleBackColor = true;
+            this.Cuba2.CheckedChanged += new System.EventHandler(this.Cuba2_CheckedChanged);
             // 
             // FormCrearProcesos
             // 
