@@ -1,0 +1,86 @@
+[
+uuid(39EC6DB2-DE51-4843-8629-5BA95C57C192),
+version(1.0),
+helpstring("FaconSvr Library")
+]
+library FaconSvr
+{
+importlib("stdole2.tlb");
+importlib("stdvcl40.dll");
+[
+uuid(E33C7B53-90BB-41E9-88E5-3DD8D485E95B),
+version(1.18),
+helpstring("Dispatch interface for FaconServer Object"),
+dual,
+oleautomation
+]
+interface IFaconServer: IDispatch
+{
+[
+id(0x00000001)
+]
+HRESULT _stdcall OpenProject([in] BSTR filename );
+[
+id(0x00000002)
+]
+HRESULT _stdcall SaveProject([in] BSTR filename );
+[
+id(0x00000003)
+]
+HRESULT _stdcall Connect( void );
+[
+id(0x00000004)
+]
+HRESULT _stdcall Disconnect( void );
+[
+id(0x00000005)
+]
+HRESULT _stdcall AddGroup([in] BSTR path, [in] BSTR groupname, [in] byte priority, [in] byte
+enabled );
+[
+id(0x00000006)
+]
+HRESULT _stdcall EditGroup([in] BSTR path, [in] BSTR groupname, [in] byte priority, [in] byte
+enabled );
+[
+id(0x00000007)
+]
+HRESULT _stdcall DeleteGroup([in] BSTR path, [in] BSTR groupname );
+[
+id(0x00000008)
+]
+HRESULT _stdcall AddItem([in] BSTR path, [in] BSTR itemname );
+[
+id(0x00000009)
+]
+HRESULT _stdcall DeleteItem([in] BSTR path, [in] BSTR itemname );
+[
+id(0x0000000A)
+]
+HRESULT _stdcall GetItem([in] BSTR path, [in] BSTR itemname, [out, retval] VARIANT * value );
+[
+id(0x0000000B)
+]
+HRESULT _stdcall SetItem([in] BSTR path, [in] BSTR itemname, [in] BSTR value );
+};
+[
+uuid(6FC145E9-A43F-4A71-89B5-9D7284540D5B),
+version(1.7),
+helpstring("Events interface for FaconServer Object")
+]
+dispinterface IFaconServerEvents
+{
+properties:
+methods:
+};
+[
+uuid(56A9ADF8-604D-40B7-A696-990FCFAD1E46),
+version(1.0),
+helpstring("FaconServer Object")
+]
+coclass FaconServer
+{
+[default] interface IFaconServer;
+[default, source] dispinterface IFaconServerEvents;
+};
+};
