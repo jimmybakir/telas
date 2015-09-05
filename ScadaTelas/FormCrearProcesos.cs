@@ -123,6 +123,40 @@ namespace ScadaTelas
                 this.ocultarVaciar(false);
             }
         }
+ 		this.ocultarCalentar(estadoSecundarias);
+            this.CPEnfriar.Enabled = estado;
+            this.ocultarEnfriar(estadoSecundarias);
+            this.CPVaciar.Enabled = estado;
+            this.ocultarVaciar(estadoSecundarias);
+        }
+
+        private void ocultarLlenar(bool estado)
+        {
+            this.CPLlenarNivel.Enabled = estado;
+            this.CPLlenarTiempo.Enabled = estado;
+        }
+
+        private void ocultarCalentar(bool estado)
+        {
+            this.CPCalentarTemp.Enabled = estado;
+            this.CPCaletarTiempo.Enabled = estado;
+        }
+
+        private void ocultarEnfriar(bool estado)
+        {
+            this.CPEnfriarTemp.Enabled = estado;
+            this.CPEnfriarTiempo.Enabled = estado;
+        }
+
+        private void ocultarVaciar(bool estado)
+        {
+            this.CPVaciarTemp.Enabled = estado;
+            this.CPVaciarTiempo.Enabled = estado;
+        }
+
+        private void CubaPrincipal_CheckedChanged(object sender, EventArgs e)
+        {
+
         // 
         // Controles de Cubas Secundarias
         // 
