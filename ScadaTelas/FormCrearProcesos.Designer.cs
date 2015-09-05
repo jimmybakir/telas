@@ -84,7 +84,7 @@
             this.gCubaPrincipal.Controls.Add(this.CPLlenar);
             this.gCubaPrincipal.Location = new System.Drawing.Point(14, 50);
             this.gCubaPrincipal.Name = "gCubaPrincipal";
-            this.gCubaPrincipal.Size = new System.Drawing.Size(721, 135);
+            this.gCubaPrincipal.Size = new System.Drawing.Size(721, 132);
             this.gCubaPrincipal.TabIndex = 0;
             this.gCubaPrincipal.TabStop = false;
             this.gCubaPrincipal.Text = "Cuba Principal";
@@ -268,7 +268,7 @@
             this.groupBox1.Controls.Add(this.flowLayoutPanel8);
             this.groupBox1.Controls.Add(this.CSLavado);
             this.groupBox1.Controls.Add(this.CSLlenado);
-            this.groupBox1.Location = new System.Drawing.Point(14, 216);
+            this.groupBox1.Location = new System.Drawing.Point(14, 284);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(721, 135);
             this.groupBox1.TabIndex = 8;
@@ -398,7 +398,7 @@
             // Cuba1
             // 
             this.Cuba1.AutoSize = true;
-            this.Cuba1.Location = new System.Drawing.Point(14, 191);
+            this.Cuba1.Location = new System.Drawing.Point(14, 248);
             this.Cuba1.Name = "Cuba1";
             this.Cuba1.Size = new System.Drawing.Size(66, 19);
             this.Cuba1.TabIndex = 0;
@@ -409,7 +409,7 @@
             // Cuba2
             // 
             this.Cuba2.AutoSize = true;
-            this.Cuba2.Location = new System.Drawing.Point(86, 191);
+            this.Cuba2.Location = new System.Drawing.Point(86, 248);
             this.Cuba2.Name = "Cuba2";
             this.Cuba2.Size = new System.Drawing.Size(66, 19);
             this.Cuba2.TabIndex = 1;
