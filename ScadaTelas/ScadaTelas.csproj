@@ -54,6 +54,7 @@
     <Compile Include="FormCrearProcesos.Designer.cs">
       <DependentUpon>FormCrearProcesos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\Class1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCrearProcesos.resx">
