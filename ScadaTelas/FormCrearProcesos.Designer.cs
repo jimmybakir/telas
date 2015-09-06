@@ -313,7 +313,7 @@
             this.CSIntroduccion.TabIndex = 3;
             this.CSIntroduccion.Text = "Introduccion";
             this.CSIntroduccion.UseVisualStyleBackColor = true;
-            this.CSIntroduccion.CheckedChanged += new System.EventHandler(this.CSIntroduccion_CheckedChanged);
+            //this.CSIntroduccion.CheckedChanged += new System.EventHandler(this.CSIntroduccion_CheckedChanged);
             // 
             // flowLayoutPanel7
             // 
@@ -381,8 +381,8 @@
             this.CSLavado.Size = new System.Drawing.Size(73, 19);
             this.CSLavado.TabIndex = 2;
             this.CSLavado.Text = "Lavados";
-            this.CSLavado.UseVisualStyleBackColor = true;
-            this.CSLavado.CheckedChanged += new System.EventHandler(this.CSLavado_CheckedChanged);
+            // this.CSLavado.UseVisualStyleBackColor = true;
+            //this.CSLavado.CheckedChanged += new System.EventHandler(this.CSLavado_CheckedChanged);
             // 
             // CSLlenado
             // 
@@ -393,7 +393,7 @@
             this.CSLlenado.TabIndex = 1;
             this.CSLlenado.Text = "Llenado";
             this.CSLlenado.UseVisualStyleBackColor = true;
-            this.CSLlenado.CheckedChanged += new System.EventHandler(this.CSLlenado_CheckedChanged);
+            //this.CSLlenado.CheckedChanged += new System.EventHandler(this.CSLlenado_CheckedChanged);
             // 
             // Cuba1
             // 
@@ -404,7 +404,7 @@
             this.Cuba1.TabIndex = 0;
             this.Cuba1.Text = "Cuba 1";
             this.Cuba1.UseVisualStyleBackColor = true;
-            this.Cuba1.CheckedChanged += new System.EventHandler(this.Cuba1_CheckedChanged);
+            //this.Cuba1.CheckedChanged += new System.EventHandler(this.Cuba1_CheckedChanged);
             // 
             // Cuba2
             // 
@@ -415,7 +415,7 @@
             this.Cuba2.TabIndex = 1;
             this.Cuba2.Text = "Cuba 2";
             this.Cuba2.UseVisualStyleBackColor = true;
-            this.Cuba2.CheckedChanged += new System.EventHandler(this.Cuba2_CheckedChanged);
+            //this.Cuba2.CheckedChanged += new System.EventHandler(this.Cuba2_CheckedChanged);
             // 
             // FormCrearProcesos
             // 
