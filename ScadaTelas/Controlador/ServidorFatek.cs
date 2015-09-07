@@ -7,7 +7,7 @@ using FaconSvr;
 
 namespace ScadaTelas.Controlador
 {
-    class ServidorFatek : FaconSvr.FaconServer 
+    class ServidorFatek
     {
         protected ServidorFatek()
         {
