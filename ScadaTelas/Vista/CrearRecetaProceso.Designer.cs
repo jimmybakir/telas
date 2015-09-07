@@ -139,6 +139,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "CrearRecetaProceso";
             this.Text = "CrearRecetaProceso";
+            this.Load += new System.EventHandler(this.CrearRecetaProceso_Load);
             this.ResumeLayout(false);
 
         }

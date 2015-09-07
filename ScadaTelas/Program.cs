@@ -16,7 +16,7 @@ namespace ScadaTelas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCrearProcesos());
+            Application.Run(new CrearRecetaProceso());
         }
     }
 }
